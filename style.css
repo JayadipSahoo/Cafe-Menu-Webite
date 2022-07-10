@@ -86,3 +86,55 @@ img{
     margin-right: auto;
     margin-top: -25px;
 }
+.share-button{
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 80px;
+  background: burlywood;
+  border-radius:12px;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.share-button:hover{
+  transform: scale(1.1);
+}
+.share-button span{
+  position:absolute;
+  width:100%;
+  height: 100%;
+  background-color:brown;
+  color: black;
+  text-align: center;
+  line-height: 80px;
+  z-index:999;
+  transition: 0.5s linear;
+  border-radius: 12px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.share-button:hover span{
+  transform: translateX(-100%);
+  transition-delay: 0.3s;
+
+}
+.share-button a{
+  flex: 1;
+  font-size: 26px;
+  color:white;
+  text-align: center;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: 0.3s;
+
+}
+.share-button:hover a{
+  opacity: 1;
+  transform: translateX(0);
+
+}
